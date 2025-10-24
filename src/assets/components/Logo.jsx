@@ -1,3 +1,7 @@
 export default function Logo() {
-  return <img src="./src/assets/img/dc-logo.png" alt="Logo DC Comics" />;
+  return (
+    <a className="logo" href="#">
+      <img src="./src/assets/img/dc-logo.png" alt="" />
+    </a>
+  );
 }

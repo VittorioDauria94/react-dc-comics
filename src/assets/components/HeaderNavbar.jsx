@@ -1,7 +1,7 @@
 export default function HeaderNavbar() {
   return (
-    <nav>
-      <ul>
+    <nav className="flex">
+      <ul className="flex align-items-center gap-30 nav-font">
         <li>
           <a href="#">CHARACTERS</a>
         </li>
