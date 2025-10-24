@@ -72,6 +72,27 @@ main {
     padding: 50px 0;
 }
 
+.my-20 {
+    margin: 20px 0;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.col-30 {
+    width: 30%;
+}
+
+
+.col-40 {
+    width: 40%;
+}
+
 /* Header */
 
 header {
@@ -82,6 +103,7 @@ header {
 .logo {
     display: inline-block;
     width: 80px;
+    flex-shrink: 0;
 }
 
 .nav-font {
@@ -89,7 +111,7 @@ header {
     font-weight: 600;
 }
 
-nav a:hover{
+nav a:hover {
     color: rgb(12, 125, 237);
 }
 
@@ -98,13 +120,60 @@ nav a:hover{
     background-color: rgb(12, 125, 237);
 }
 
-.shop-banner img{
+.shop-banner img {
     width: 50px;
     height: 55px;
     vertical-align: middle;
     margin-right: 10px;
+    flex-shrink: 0;
 }
 
-.shop-banner a{
+.shop-banner a {
     font-size: 0.8rem;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    background-image: url(./assets/img/dc-logo-bg.png), url(./assets/img/footer-bg.jpg);
+    background-repeat: no-repeat, repeat;
+    background-position: right 20% top -94px, left top;
+    color: white;
+    padding-top: 30px;
+}
+
+.bg-logo {
+    position: absolute;
+    left: 60%;
+}
+
+.bottom-footer {
+    background-color: rgb(48, 48, 48);
+}
+
+footer h4 {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: white;
+}
+
+footer li {
+    font-size: 0.8rem;
+    color: rgb(148, 148, 148);
+    margin-bottom: 5px;
+}
+
+.sub-btn {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid rgb(12, 125, 237);
+    padding: 10px 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.follow-font {
+    color: rgb(12, 125, 237);
+    font-weight: bolder;
+    font-size: 1.2rem;
 }

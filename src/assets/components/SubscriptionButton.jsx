@@ -1,3 +1,3 @@
 export default function SubscriptionButton() {
-  return <button></button>;
+  return <a className="sub-btn">SIGN-UP NOW!</a>;
 }

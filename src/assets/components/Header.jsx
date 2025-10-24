@@ -5,8 +5,8 @@ export default function Header() {
   return (
     <header>
       <div className="container flex justify-between py-20">
-      <Logo />
-      <HeaderNavbar />
+        <Logo />
+        <HeaderNavbar />
       </div>
     </header>
   );
