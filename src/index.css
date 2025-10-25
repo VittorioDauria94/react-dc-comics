@@ -54,12 +54,20 @@ main {
     justify-content: space-between;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
 .justify-around {
     justify-content: space-around;
 }
 
 .align-items-center {
     align-items: center;
+}
+
+.align-center {
+    text-align: center;
 }
 
 .gap-10 {
@@ -94,6 +102,14 @@ main {
     margin-top: 30px;
 }
 
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.col-16 {
+    width: 16%;
+}
+
 .col-30 {
     width: 30%;
 }
@@ -101,6 +117,10 @@ main {
 
 .col-40 {
     width: 40%;
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
 
 /* Header */
@@ -143,6 +163,34 @@ nav a:hover {
 }
 
 .shop-banner a {
+    font-size: 0.8rem;
+}
+
+.comic-img {
+    width: 136px;
+    height: 210px;
+}
+
+.jumbo {
+    background-image: url(./assets/img/jumbotron.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(0.2 * 100vw);
+}
+
+.label {
+    color: var(--clr-white);
+    font-weight: 600;
+}
+
+.current {
+    padding: 10px 15px;
+    background-color: var(--clr-blue);
+}
+
+.load-more {
+    padding: 10px 45px;
+    background-color: var(--clr-blue);
     font-size: 0.8rem;
 }
 
