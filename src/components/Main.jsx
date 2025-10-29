@@ -1,35 +1,39 @@
 import ShopBanner from "./ShopBanner";
 import comics from "../comics";
 import Jumbotron from "./Jumbotron";
+import ComicsCard from "./ComicsCard";
+import Label from "./Label";
+import LabelLink from "./LabelLink";
+import shopLinks from "../ShopLinks";
 
 export default function Main() {
-  const comicsElem = comics.map((curComic) => (
-    <li key={curComic.id} className="col-16 flex justify-center">
-      <a href="#">
-        <img
-          className="comic-img"
-          src={curComic.thumb}
-          alt={`Cover image of ${curComic.title}`}
-        />
-        <h6>{curComic.title}</h6>
-      </a>
-    </li>
-  ));
   return (
     <main>
       <Jumbotron />
       <div className="container">
-        <span className="label current">CURRENT SERIES</span>
+        <Label style="current" title="CURRENT SERIES" />
       </div>
       <ul className="container py-50 flex wrap justify-between">
-        {comicsElem}
+        {comics.map(({ id, thumb, title }) => (
+          <ComicsCard key={id} thumb={thumb} title={title} />
+        ))}
       </ul>
       <div className="container mb-30 flex justify-center">
-        <a href="#" className="label load-more">
-          LOAD MORE
-        </a>
+        <LabelLink href="/load-more" style="load-more" title="LOAD MORE" />
       </div>
-      <ShopBanner />
+      <div className="shop-banner">
+        <ul className="container flex justify-around align-items-center py-50  ">
+          {shopLinks.map(({ id, href, img, alt, title }) => (
+            <ShopBanner
+              key={id}
+              href={href}
+              img={img}
+              alt={alt}
+              title={title}
+            />
+          ))}
+        </ul>
+      </div>
     </main>
   );
 }
