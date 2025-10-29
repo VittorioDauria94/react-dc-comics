@@ -70,6 +70,10 @@ main {
     text-align: center;
 }
 
+.flex-column {
+    flex-direction: column;
+}
+
 .gap-10 {
     gap: 10px;
 }

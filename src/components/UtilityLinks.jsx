@@ -1,12 +1,18 @@
-export default function UtilityLinks() {
+export default function UtilityLinks({ sections }) {
   return (
-    <>
-      <li>
-        <h4>DC COMICS</h4>
-      </li>
-      <li>
-        <a href="#">Characters</a>
-      </li>
-    </>
+    <div className="flex flex-column">
+      {sections.map(({ section, links }) => (
+        <div key={section} className="mb-30">
+          <h4>{section}</h4>
+          <ul>
+            {links.map(({ name, href }) => (
+              <li key={name}>
+                <a href={href}>{name}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
   );
 }

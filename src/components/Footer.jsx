@@ -1,16 +1,19 @@
 import ButtonLink from "./ButtonLink";
 import Social from "./Social";
 import UtilityLinks from "./UtilityLinks";
+import footerLinks from "../FooterLinks";
 
 export default function Footer() {
   return (
     <footer>
       <div className="container">
-        <div className="col-40 flex justify-between">
-          <div className="col-30">
-            <ul>
-              <UtilityLinks />
-            </ul>
+        <div className="col-40">
+          <div className="flex justify-between">
+            {footerLinks.map(({ id, sections }) => (
+              <div key={id}>
+                <UtilityLinks sections={sections} />
+              </div>
+            ))}
           </div>
         </div>
       </div>
