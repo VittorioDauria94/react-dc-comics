@@ -1,10 +1,10 @@
 import ShopBanner from "./ShopBanner";
-import comics from "../comics";
+import comics from "../assets/data/comics";
 import Jumbotron from "./Jumbotron";
 import ComicsCard from "./ComicsCard";
 import Label from "./Label";
 import LabelLink from "./LabelLink";
-import shopLinks from "../ShopLinks";
+import shopLinks from "../assets/data/shopLinks";
 
 export default function Main() {
   return (

@@ -1,6 +1,6 @@
 import Logo from "./Logo";
 import HeaderNavbar from "./HeaderNavbar";
-import navbarObj from "../navbarObj";
+import navbarObj from "../assets/data/navbarObj";
 
 export default function Header() {
   return (

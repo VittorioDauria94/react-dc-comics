@@ -1,7 +1,8 @@
 import ButtonLink from "./ButtonLink";
 import Social from "./Social";
 import UtilityLinks from "./UtilityLinks";
-import footerLinks from "../FooterLinks";
+import footerLinks from "../assets/data/FooterLinks";
+import socialLinks from "../assets/data/socialLinks";
 
 export default function Footer() {
   return (
@@ -20,7 +21,7 @@ export default function Footer() {
       <div className="bottom-footer mt-30">
         <div className="container flex justify-between py-20">
           <ButtonLink href="/subscribe" style="sub-btn" title="SIGN-UP NOW!" />
-          <Social />
+          <Social socialLinks={socialLinks} />
         </div>
       </div>
     </footer>
