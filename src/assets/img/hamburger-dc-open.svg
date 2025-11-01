@@ -1,0 +1,37 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="36"
+  height="36"
+  viewBox="0 0 36 36"
+  fill="none"
+>
+  <!-- Main DC blue circle -->
+  <circle cx="18" cy="18" r="17" fill="#0C7DED" stroke="#ffffff" stroke-width="2" />
+
+  <!-- Cross lines -->
+  <rect
+    x="11"
+    y="17"
+    width="14"
+    height="2.5"
+    rx="1"
+    transform="rotate(45 18 18)"
+    fill="white"
+  />
+  <rect
+    x="11"
+    y="17"
+    width="14"
+    height="2.5"
+    rx="1"
+    transform="rotate(-45 18 18)"
+    fill="white"
+  />
+
+  <!-- Lightning detail (DC heroic touch) -->
+  <polygon
+    points="26,10 29,15 27,15 29,20 24,14 26,14"
+    fill="yellow"
+    opacity="0.8"
+  />
+</svg>

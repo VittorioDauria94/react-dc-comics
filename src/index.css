@@ -149,8 +149,26 @@ nav a:hover {
     color: var(--clr-blue);
 }
 
+.nav-menu {
+    display: flex;
+}
+
 .active {
     color: var(--clr-blue);
+    border-bottom: 4px solid var(--clr-blue);
+    padding-bottom: 44px;
+}
+
+.hamburger-btn {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-btn img {
+    width: 60px;
+    height: auto;
 }
 
 /* Main */
@@ -242,4 +260,40 @@ footer li {
     color: var(--clr-blue);
     font-weight: bolder;
     font-size: 1.2rem;
+}
+
+
+@media (max-width: 1135px) {
+    .hamburger-btn {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        background-color: var(--clr-blue);
+        color: var(--clr-white);
+        position: absolute;
+        top: 35px;
+        right: 186px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .show-menu {
+        display: flex;
+    }
+
+    .show-menu ul {
+        flex-direction: column;
+    }
+
+    nav a:hover {
+        color: var(--clr-black);
+    }
+
+    .active {
+        color: var(--clr-white);
+        border-bottom: 4px solid var(--clr-white);
+        padding-bottom: 10px;
+    }
 }
